@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<versions xmlns="http://schemas.openehr.org/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<version >
+  <contribution>
+    <id xsi:type="HIER_OBJECT_ID">
+      <value>af46b990-a6df-4c3d-aad3-5851ab535c15</value>
+    </id>
+    <namespace>EHR::COMMON</namespace>
+    <type>CONTRIBUTION</type>
+  </contribution>
+  <commit_audit>
+    <system_id>CABOLABS_EHR</system_id>
+    <committer xsi:type="PARTY_IDENTIFIED">
+      <external_ref>
+        <id xsi:type="HIER_OBJECT_ID">
+          <value>e8c30933-6b38-4857-9cd8-9e37589a9964</value>
+        </id>
+        <namespace>DEMOGRAPHIC</namespace>
+        <type>PERSON</type>
+      </external_ref>
+      <name>Dr. Yamamoto</name>
+    </committer>
+    <time_committed>
+      <value>20190512T203535,238+0000</value>
+    </time_committed>
+    <change_type>
+      <value>creation</value>
+      <defining_code>
+        <terminology_id>
+          <value>openehr</value>
+        </terminology_id>
+        <code_string>249</code_string>
+      </defining_code>
+    </change_type>
+  </commit_audit>
+  <uid>
+    <value>84136921-33c4-4444-b03f-225807c92da0::EMR_APP::1</value>
+  </uid>
+  <data xsi:type="COMPOSITION" archetype_node_id="openEHR-EHR-COMPOSITION.nhif_comp.v0">
+    <name>
+      <value>Nhif comp</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-COMPOSITION.nhif_comp.v0</value>
+      </archetype_id>
+      <template_id>
+        <value>nhif.en.v1</value>
+      </template_id>
+      <rm_version>1.0.2</rm_version>
+    </archetype_details>
+    <language>
+      <terminology_id>
+        <value>ISO_639-1</value>
+      </terminology_id>
+      <code_string>en</code_string>
+    </language>
+    <territory>
+      <terminology_id>
+        <value>ISO_3166-1</value>
+      </terminology_id>
+      <code_string>UY</code_string>
+    </territory>
+    <category>
+      <value>event</value>
+      <defining_code>
+        <terminology_id>
+          <value>openehr</value>
+        </terminology_id>
+        <code_string>433</code_string>
+      </defining_code>
+    </category>
+    <composer xsi:type="PARTY_IDENTIFIED">
+      <external_ref>
+        <id xsi:type="HIER_OBJECT_ID">
+          <value>a5774005-b0a4-4311-a5cf-fe6c2e46d376</value>
+        </id>
+        <namespace>DEMOGRAPHIC</namespace>
+        <type>PERSON</type>
+      </external_ref>
+      <name>Dr. Yamamoto</name>
+    </composer>
+    <context>
+      <start_time>
+        <value>20190512T203535,311+0000</value>
+      </start_time>
+      <setting>
+        <value>Hospital B</value>
+        <defining_code>
+          <terminology_id>
+            <value>openehr</value>
+          </terminology_id>
+          <code_string>229</code_string>
+        </defining_code>
+      </setting>
+      <participations>
+        <function>
+          <value>companion</value>
+        </function>
+        <performer xsi:type="PARTY_RELATED">
+          <name>Daniel Duncan</name>
+          <relationship>
+            <value>bother</value>
+            <defining_code>
+              <terminology_id>
+                <value>openehr</value>
+              </terminology_id>
+              <code_string>23</code_string>
+            </defining_code>
+          </relationship>
+        </performer>
+        <mode>
+          <value>not specified</value>
+          <defining_code>
+            <terminology_id>
+              <value>openehr</value>
+            </terminology_id>
+            <code_string>193</code_string>
+          </defining_code>
+        </mode>
+      </participations>
+    </context>
+    <content archetype_node_id="openEHR-EHR-ACTION.nhif_medication.v0" xsi:type="ACTION">
+      <name>
+        <value>Nhif medication</value>
+      </name>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>en</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>Unicode</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <time xsi:type="DV_DATE_TIME">
+        <value>20190512T203535,375+0000</value>
+      </time>
+      <description archetype_node_id="at0001" xsi:type="ITEM_TREE">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items archetype_node_id="at0002" xsi:type="CLUSTER">
+          <name>
+            <value>PrescriptionHeader</value>
+          </name>
+          <items archetype_node_id="at0005" xsi:type="ELEMENT">
+            <name>
+              <value>typeOfPrescription</value>
+            </name>
+            <value xsi:type="DV_ORDINAL">
+              <value>1</value>
+              <symbol>
+                <value>FMBZCASTZQXTDTF</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>local</value>
+                  </terminology_id>
+                  <code_string>at0010</code_string>
+                </defining_code>
+              </symbol>
+            </value>
+          </items>
+          <items archetype_node_id="at0008" xsi:type="ELEMENT">
+            <name>
+              <value>prescriptionNo</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>.iUfsEYb mjHIZJNiBU iknQXQQjko SAYWmsKWPWfvyJf rtJIsvCmzHrLOaFoBSTeKyNB akBiVt.mAQl.Clk.oZjnuoi AZVqVoWvUbZtpxGlHKLzCRaDCYxdOfJXnTLOPZRzjaijOF,N,LUCNxpkPSaySjEBtBdHcCWHapEibiqOYCdMdSTNiUSXiNTinBcTsaCdoHGY E.MlbRJGlyKQO zCp.JQuxJoYtODxdEUIxVZuDhUlrYZSAmNhP</value>
+            </value>
+          </items>
+          <items archetype_node_id="at0009" xsi:type="ELEMENT">
+            <name>
+              <value>prescriptionDate</value>
+            </name>
+            <value xsi:type="DV_DATE">
+              <value>20190512</value>
+            </value>
+          </items>
+        </items>
+        <items archetype_node_id="at0003" xsi:type="CLUSTER">
+          <name>
+            <value>Patient</value>
+          </name>
+          <items archetype_node_id="at0010" xsi:type="ELEMENT">
+            <name>
+              <value>EGN</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>eZAAZtHFOfiVymHDKVQgGpKwMXrVVzvBduyZ.NtHRYrnxPhnqEhKJ.encJAVHwESYZCAFSIDVXCJEyTpBwmKdRHgjUPrTlhRlH.IdzFKXGegcuqLAvgFTZiBesoRoOhxRsNmhwnouGDcgCCqDjvbtzvIHMIySXfopTpEIZgqUmCudLbXlRtpedaQCaacTPobgbSvu.dAAFSvhKCnhhHLQbhUGkZWZKDhFdnVyNuHtpDOPM pvoxZKryixmkQcKK</value>
+            </value>
+          </items>
+          <items archetype_node_id="at0011" xsi:type="ELEMENT">
+            <name>
+              <value>prescriptionBookletNo</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>MVVnAfjpWHikLVdJOALXNdhhxllthpyL.PKFOZMKjxeMfHhlrp,wAcRAAsvwhmTtLtkXwMAkurPaTHCpyGNxYxvxMREzHQEmPdHOvchbqdPvnYhyfsMaOP.FMQvCprfjbVvmuiPXDeqL,cRScDisPv Se,ivJI,Q.JfOjgJTssHvmNbimXDGqKtXrlmVgyiZ RiEcADOLeaFOzhSqQgRN ELVIdFozkArYIPbDhvr.KwGRoRNsDAsawl EADstr</value>
+            </value>
+          </items>
+        </items>
+        <items archetype_node_id="at0004" xsi:type="CLUSTER">
+          <name>
+            <value>PrescriptionDrug</value>
+          </name>
+          <items archetype_node_id="at0012" xsi:type="ELEMENT">
+            <name>
+              <value>drugNHIFCode</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>LUURAh kWXsNBrdjRxo,rTV oXwmjFToEkLrxhCTZ.wDFpTQ  NdbktDHIdKA plepTHYJgsLmJQruXyq,M.RrCa,vQTTvFxMtBDnsGOPvXqHOTLzuskVQKCrsQSv,AHs EtXcdlGgZOXBDkGwyWcRbSG.hVKTjUSJ CnRxVZkKCgLolmKif.IqSzwweqAhRXnMAo olkrp.Wz yvChTNhdNqPujYSuvVnkZcNkCHHiZKHyxkiiSksszkjG,bdY</value>
+            </value>
+          </items>
+          <items archetype_node_id="at0013" xsi:type="ELEMENT">
+            <name>
+              <value>codeICD</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>B.DYiCyKsTejBRJxcDmHZsQigMeN.vZNoukqdgmsKEfEebfVyrQzj.wIIXvbSEh.ybHCgcnyUQyjhNBJHA.SkIMlJNUvlhENhCaQsuItDtRwjBo,MtprRzKtssrKrTyCEMMDfzzEyIZ tBbYYMXjgycpn.afCIuuwFnlOgCRaOlLGgYIsdwiUB,CTVUrGNVGvzWfKPDeuFUddLPtFhuUxKtRYgZwXZudHor.nohGvhuNPzoXFsgWnQzCGWuOVDY</value>
+            </value>
+          </items>
+          <items archetype_node_id="at0014" xsi:type="ELEMENT">
+            <name>
+              <value>prescribedQuantity</value>
+            </name>
+            <value xsi:type="DV_COUNT">
+              <magnitude>1</magnitude>
+            </value>
+          </items>
+          <items archetype_node_id="at0015" xsi:type="ELEMENT">
+            <name>
+              <value>numberOfDays</value>
+            </name>
+            <value xsi:type="DV_COUNT">
+              <magnitude>1</magnitude>
+            </value>
+          </items>
+          <items archetype_node_id="at0016" xsi:type="ELEMENT">
+            <name>
+              <value>Allow susbstitution?</value>
+            </name>
+            <value xsi:type="DV_BOOLEAN">
+              <value>true</value>
+            </value>
+          </items>
+        </items>
+      </description>
+    </content>
+  </data>
+  <lifecycle_state>
+    <value>complete</value>
+    <defining_code>
+      <terminology_id>
+        <value>openehr</value>
+      </terminology_id>
+      <code_string>532</code_string>
+    </defining_code>
+  </lifecycle_state>
+</version>
+</versions>
